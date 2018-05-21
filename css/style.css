@@ -1,0 +1,173 @@
+* {padding: 0; margin: 0;}
+html * {max-height:1000000px;}
+* {-webkit-text-size-adjust: 100%;}
+img {display: block;}
+a {outline: 0;}
+
+body {font-family: 'Muli', sans-serif; font-size: 15px; background: #222; color: #555; line-height: 1.5em; font-weight: 300;}
+body p {margin-bottom: 1.5em; overflow: visible;}
+#content ul, #content ol {margin-bottom: 1.5em;}
+#content ul a {text-decoration: underline;}
+
+#topmenu {display: none; overflow: auto; background: #005da8;}
+#topmenu ul {padding: 0; margin: 0; display: inline;}
+#topmenu ul li {list-style: none; float: left; width: 50%; border-bottom: 1px solid rgba(255,255,255,0.1);}
+#topmenu ul li a {text-decoration: none; padding: 0 30px; display: block; font-size: 20px; line-height: 2.2em; color: white;}
+#topmenu ul li a:hover {color: white;}
+
+#preheader {text-align: right; background: #eee; color: #777;}
+#preheader .icon {color: #ccc;}
+#preheader a {color: #777;}
+#preheader a:hover {text-decoration: none;}
+#slogan {display: inline-block; padding: 5px 0;}
+
+.featured_image {margin-top: 60px; margin-right: 10px;}
+
+#content a.polaroid,
+#prefooter a.img,
+#content a.img,
+#prefooter img,
+#content img {border: 4px solid white; box-shadow: 0 0 1px rgba(0,0,0,0.5); overflow: hidden;}
+#content a.polaroid {background: #005da8; font-family: 'Montserrat', sans-serif; font-weight: 700; text-align: center; color: white; height: 100px; display: block; margin-bottom: 20px; line-height: 92px;}
+#content a.polaroid:hover {color: white;}
+#content a.polaroid div {height: 100px;}
+#content a.polaroid:hover div {opacity: 0.5;}
+#prefooter a.img,
+#content a.img {display: block; background: #005da8;}
+#prefooter a.img img,
+#content a.img img {border: 0; box-shadow: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#prefooter a.img:hover img,
+#content a.img:hover img {opacity: 0.4;}
+
+#header {background: #fff; border-bottom: 5px solid #005da8;}
+#banner {height: 130px; background: #999; background-size: cover;} 
+#banner > div {background: url('/img/houten-vloeren-full.jpg') center 70% no-repeat; background-size: cover; text-align: center; height: 130px; 
+line-height: 130px; font-size: 35px; color: white; font-family: 'Montserrat', sans-serif; font-weight: 700; overflow: hidden;}
+#banner > div > div {outline: none; overflow: hidden; height: 130px; }
+.home #banner > div > div {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+50,000000+100&0+0,0.65+50,0+100 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.3s) 50%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 50%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 50%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+.home #banner > div,
+.home #banner > div > div,
+.home #banner {height: 400px; line-height: 400px;}
+.home #banner .btn {text-transform: uppercase; outline: 0; margin-top: 30px; border: 2px solid white; color: white; font-size: 15px; font-weight: 700; display: inline-block;}
+.home #banner .btn:hover {color: white; border-color: #005da8!important; background: #005da8!important;}
+.form-control {border-radius: 0px; border: 1px solid #999;}
+.form-group {letter-spacing: 1px; text-transform: uppercase; font-size: 11px; font-weight: 400;}
+.btn {
+    letter-spacing: 1px; text-transform: uppercase; font-size: 11px; font-weight: 400;
+    border-radius: 0px!important;
+    -webkit-border-radius: 0px; 
+    -moz-border-radius: 0px; 
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;                  
+    -moz-transition: all 0.3s ease;                 
+    -o-transition: all 0.3s ease;   
+    -ms-transition: all 0.3s ease;          
+    transition: all 0.3s ease;
+}
+.btn:hover {background: #555; color: white!important; border-color: #555!important;}
+input[type="submit"].btn {background: white; border: 1px solid #999;}
+input[type="submit"]:hover {background: #555;}
+#banner .slider {white-space: nowrap;}
+#banner .slider > div {width: 100%; display: inline-block; white-space: normal;}
+.home .firstrow {padding-top: 45px;}
+
+
+#logo {margin: 0; padding: 0; position: absolute; width: 150px; cursor: pointer; z-index: 99;}
+#menu {clear: both; display: block; text-transform: none; font-size: 20px; font-weight: 400; float: right; text-align: center; margin: 0;}
+#menu li {display: block; float: left; list-style: none; background: white; vertical-align: bottom; padding: 0 0 0 40px;}
+#menu li a {color: #666; text-decoration: none; display: block; padding: 35px 0 35px; border-bottom: 0px solid white; font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 400;}
+#menu li a:hover, #menu li.active a {color: #005da8;}
+#menu li.active a {border-color: #005da8;} 
+
+
+#content .submenu {border: 0; border-top: 1px solid #005da8;}
+#content .submenu a {text-decoration: none; letter-spacing: 1px; text-transform: uppercase; font-size: 11px; font-weight: 400; color: #005da8; padding: 0; display: block; padding: 0 30px 0 0; text-align: right; border-bottom: 1px solid #005da8; padding: 3px 0; text-align: left;}
+#content .submenu a:hover {text-decoration: none;}
+#content .submenu li {list-style: none;}
+#content .submenu li.active a {font-family: 'Montserrat', sans-serif; font-weight: 700;}
+#content ul.submenu {padding: 0; margin: 0; margin-right: 15px;}
+#content a {color: #005da8;}
+#content a:active, #content a:focus, #content a:hover {text-decoration: none; color: #005da8;}
+#submenuspacer-left {height: 50px; width: 10px;}
+#submenuspacer {height: 148px; width: 10px;}
+
+
+#content {background: #fff; padding-bottom: 100px;}
+#content .container {text-align: left;}
+#content p a {text-decoration: underline;}
+#prefooter img,
+#content img {width: 100%;}
+h1 {letter-spacing: -1px; margin: 0 0 1px; font-size: 47px; padding: 0 0 0.65em; font-weight: 400; color: #005da8; font-family: 'Montserrat', sans-serif; line-height: 1em; overflow: hidden;}
+h3 {font-family: 'Montserrat', sans-serif; font-size: 20px;}
+#content ul {margin-left: 20px;}
+#content p:first-child {font-weight: 400; color: #666; font-size: 20px; line-height: 1.5em; margin-bottom: 1.5em;}
+.block strong {letter-spacing: 1px; text-transform: uppercase; font-size: 11px; font-weight: 400;}
+#content a.btn, #content a.more {letter-spacing: 1px; text-transform: uppercase; font-size: 11px; font-weight: 400; display: inline-block; margin: 13px 0; color: #555; border: 1px solid #999; text-decoration: none;}
+
+#breadcrumbs {letter-spacing: 1px; margin-top: 45px; color: #005da8; text-transform: uppercase; font-size: 11px; font-weight: 400;}
+#breadcrumbs a:hover,
+#breadcrumbs a {text-decoration: none; color: #005da8;}
+
+#content .block {border-left: 0px dotted #ddd; padding: 0 30px;}
+#content .block a {text-decoration: none; color: #555;}
+#content .block a.btn {color: #555; border: 1px solid #999;}
+.formwrapper {padding-right: 10px;}
+textarea {resize: vertical;}
+
+#gallery {padding-top: 20px;}
+.fotos #gallery {padding-top: 0; padding-bottom: 20px;}
+#gallery.row {margin-left: -4px; margin-right: -4px;}
+#gallery.row > div {padding: 4px;}
+#gallery img {}
+
+#prefooter {text-align: center; background: #eee; padding: 40px 0 40px; color: #777;}
+#prefooter p, #prefooter h3 {margin: 0;}
+#prefooter h3 {margin-top: 0; font-size: 35px; line-height: 1em; font-weight: 700;}
+#prefooter a.btn {margin-top: 13px; color: #777; border: 1px solid #999;}
+#prefooter a.btn:hover {background: #444; border: 1px solid #444!important; color: #eee!important;}
+#prefooter a {color: #777; text-decoration: none;}
+#prefooter .border {border-left: 1px dotted #999; padding: 0px 20px 0 20px;}
+#prefooter .about {text-align: left;}
+#prefooter .about h3 {margin-bottom: 10px; font-weight: 500; font-size: 20px;}
+
+#footer {padding: 10px 0 50px; color: #777; text-align: left;}
+#footer a {color: #777; text-decoration: none;}
+#footer a.btn {margin-top: 13px; letter-spacing: 1px; text-transform: uppercase; font-size: 11px; font-weight: 400; border: 1px solid #555; }
+#footer a.btn:hover {background: #777; border: 1px solid #777!important; color: #222!important;}
+#footer h3 {font-family: 'Montserrat', sans-serif; text-transform: none; font-size: 20px; padding-top: 25px; padding-bottom: 7px; font-weight: 400; color: #ccc;}
+
+#lightbox {cursor: pointer; display: none; z-index: 99; position: fixed; top: 0; left: 0; background: #222 url('/img/preloader.gif') center center no-repeat; text-align: center;}
+#lightbox #image {z-index: 0; display: inline; max-height: 95vh; max-width: 95vw;}
+#nextbutton {color: white; float: right; width: 50px; height: 50px; line-height: 45px; margin-right: 2.5vw; font-size: 50px;}
+#prevbutton {color: white; float: left; width: 50px; height: 50px; line-height: 45px; margin-left: 2.5vw; font-size: 50px;}
+#closebutton {color: white; position: absolute; top: 2vh; right: 2.5vw; width: 50px; height: 50px; line-height: 50px; margin-left: 2.5vw; font-size: 15px; font-weight: 400;}
+#controls {height: 50px; top: 50%; position: fixed; margin-top: -25px; width: 100%;}
+#controls a {color: white; text-decoration: none;}
+#controls a:hover, #controls a:active {color: silver;}
+
+@media (max-width: 1500px) {
+#banner > div {background-image: url('/img/houten-vloeren-full.jpg');
+}
+@media (max-width: 1199px) {
+
+}
+@media (max-width: 991px) {
+.submenu a {text-align: left;}
+.submenu {border-right: 0;}
+}
+@media (max-width: 767px) {
+#banner > div {background-image: url('/img/houten-vloeren-small.jpg');}
+#content .block {border-left: 0; padding-left: 0px;}
+}

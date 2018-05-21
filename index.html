@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home | Smit Woninginrichting</title>
+<meta name="description" content="Voor al uw parket- (renovatie), laminaat, pvc, tapijt, vinyl, marmoleum en raamdecoraties! Bel mij voor een eerlijk advies en een gratis offerte!">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="/img/smitwoninginrichting_logo.png" >
+<link rel="shortcut icon" sizes="196x196" href="/img/smitwoninginrichting_logo.png" >
+<link rel="apple-touch-icon" href="/img/smitwoninginrichting_logo.png" >
+<link rel="canonical" href="http://www.smitwoninginrichting.nl/">
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/css/fontello.css">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+<script src="/js/velocity.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+
+setTimeout(function(){ goSlider(); }, 4000);
+function goSlider() {
+  var elements = document.querySelectorAll(".slider div");
+  var element = elements[0];
+  Velocity(element, {"margin-left": '-'+ element.offsetWidth + 'px'}, {
+    /* Log all the animated divs. */
+    duration: 750,
+    complete: function() { 
+      //reset margin-left
+      element.style.marginLeft = '0px';
+      //append to slider
+      document.getElementById('slider').appendChild(element); 
+      //start new animation
+      setTimeout(function(){ goSlider(); }, 4000);
+    }
+  });
+}
+
+
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+function setimage() {
+    var url = getParameterByName('url');
+    document.getElementById('lightbox').style.display = 'table';
+    document.getElementById('image').src = 'http://images.weserv.nl/?url=www.smitwoninginrichting.nl'+url+'&w=1000&h=1000';
+}
+function closeimage() {
+    document.location.href = '/index.html';
+}
+
+function goNext(e) {
+    if (!e)
+      e = window.event;
+
+    //IE9 & Other Browsers
+    if (e.stopPropagation) {
+      e.stopPropagation();
+    }
+    //IE8 and Lower
+    else {
+      e.cancelBubble = true;
+    }
+    var current,next;
+    var imgArray = new Array();
+    
+    for (i = 0; i < imgArray.length; i++) { 
+        if(getParameterByName('url')==imgArray[i]) current = i;
+    }
+    if(current<(imgArray.length-1)) next = (current+1);
+    else next = 0;
+    window.location = '/?url='+imgArray[next];
+}
+function goPrev(e) {
+    if (!e)
+      e = window.event;
+
+    //IE9 & Other Browsers
+    if (e.stopPropagation) {
+      e.stopPropagation();
+    }
+    //IE8 and Lower
+    else {
+      e.cancelBubble = true;
+    }
+    var current,prev;
+    var imgArray = new Array();
+    
+    for (i = 0; i < imgArray.length; i++) { 
+        if(getParameterByName('url')==imgArray[i]) current = i;
+    }    
+    if(current>0) prev = (current-1);
+    else prev = (imgArray.length-1);
+    window.location = '/?url='+imgArray[prev];
+}
+
+function toggleMobileMenu() {
+  if(document.getElementById('topmenu').style.display!='block') Velocity(document.getElementById('topmenu'), "slideDown", { duration: 500 });
+  else Velocity(document.getElementById('topmenu'), "slideUp", { duration: 500 });
+}
+window.addEventListener("resize", function() {
+  if(window.innerWidth>976) document.getElementById('topmenu').style.display = 'none';
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1168883-4', 'auto');
+  ga('set', 'forceSSL', true); // Toelichting CBP: Gebruik altijd https voor Google Analytics
+  ga('set', 'anonymizeIp', true); // Toelichting CBP: Zet de IP-maskering aan
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body class="home" onload="if(getParameterByName('url')) setimage('url'); document.getElementById('controls').style.display='none';">
+<div id="wrapall">
+<script>
+if(getParameterByName('url')) document.getElementById('wrapall').style.display='none';
+</script>
+<div id="topmenu">
+    <ul>
+      
+      
+      
+      
+        <li class="active"><a href="/">Home</a></li>
+      
+      
+      
+        <li ><a href="/diensten/">Diensten</a></li>
+      
+      
+      
+        <li ><a href="/producten/">Producten</a></li>
+      
+      
+      
+        <li ><a href="/fotos/">Foto's</a></li>
+      
+      
+      
+        <li ><a href="/showroom/">Showroom</a></li>
+      
+      
+      
+        <li ><a href="/contact/">Contact</a></li>
+       
+    </ul>
+</div>
+<div id="page">
+    <div id="preheader">
+        <div class="container">
+            <img id="logo" src="/img/smitwoninginrichting_logo.svg" onerror="this.onerror=null; this.src='/img/smitwoninginrichting_logo.png'" alt="Smit Woninginrichting" onclick="document.location.href='/';" />
+            
+            <span id="slogan"><span class="hidden-xs"><i class="icon icon-mail-alt"></i> <a href="mailto:info@smitwoninginrichting.nl" target="_blank">info@smitwoninginrichting.nl</a> &nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;<i class="icon icon-phone"></i>06 547 26 037</span>
+        </div>
+    </div>
+    <div id="header">
+        <div class="container">
+            <ul id="menu" class="hidden-xs hidden-sm">
+              
+              
+              
+              
+                <li class="active"><a href="/">Home</a></li>
+              
+              
+              
+                <li ><a href="/diensten/">Diensten</a></li>
+              
+              
+              
+                <li ><a href="/producten/">Producten</a></li>
+              
+              
+              
+                <li ><a href="/fotos/">Foto's</a></li>
+              
+              
+              
+                <li ><a href="/showroom/">Showroom</a></li>
+              
+              
+              
+                <li ><a href="/contact/">Contact</a></li>
+               
+
+            </ul>
+            <ul id="menu" class="visible-xs visible-sm">
+                <li><a href="#" onclick="toggleMobileMenu();">Menu <i class="icon icon-menu"></i></a></li>
+            </ul>
+        </div> 
+    </div>
+    <div id="banner"><div>
+            
+            <div class="slider" id="slider"><div><span style="line-height: 1.2em; display: inline-block; vertical-align: middle; position: relative; bottom: 5px; max-width: 550px;">Bel mij voor een eerlijk advies en een gratis offerte!<br /><a class="btn" href="/contact">Neem contact op</a></span></div><div><span style="line-height: 1.2em; display: inline-block; vertical-align: middle; position: relative; bottom: 5px; max-width: 950px;">Voor al uw parket- (renovatie), laminaat, pvc, tapijt, vinyl, marmoleum en raamdecoraties!<br /><a class="btn" href="/contact">Neem contact op</a></span></div></div>
+            
+    </div></div>
+    <div id="content">
+        <div class="container">
+
+            <div class="row firstrow">
+                
+                <div class="col-sm-4 col-md-3 col-xs-6"><a href="producten/traditioneel-parket" class="img"><img src="http://www.smitwoninginrichting.nl/img/parket.jpg" /></a><h3 class="editable" data-cms-source="/_layouts/home.html" data-cms-index="0">Parket</h3><p class="editable" data-cms-source="/_layouts/home.html" data-cms-index="1">De traditionele parketvloer kan op meerdere manieren voor u gelegd worden. Zo kunnen de stroken in een rechte lijn, maar ook in het welbekende visgraat motief worden gelegd.<br /><a class="btn more" target="_blank" href="producten/traditioneel-parket">Lees meer &gt;</a></p></div>
+
+                <div class="col-sm-4 col-md-3 col-xs-6"><a href="producten/laminaat" class="img"><img src="http://www.smitwoninginrichting.nl/img/laminaat.jpg" /></a><h3 class="editable" data-cms-source="/_layouts/home.html" data-cms-index="2">Laminaat</h3><p class="editable" data-cms-source="/_layouts/home.html" data-cms-index="3">Bent u op zoek naar een mooie laminaatvloer die past in uw interieur? U geeft uw interieur met een laminaatvloer een luxe, warme en tijdloze uitstraling die ook nog eens geheel onderhoudsvrij is.<br /><a href="producten/laminaat" class="btn more">Lees meer ></a></p></div>
+                
+                <div class="visible-xs" style="clear: both; height: 1px;"></div>
+                
+                <div class="col-sm-4 col-md-3 col-xs-6"><a href="producten/tapijt" class="img"><img src="http://www.smitwoninginrichting.nl/img/tapijt.jpg" /></a><h3 class="editable" data-cms-source="/_layouts/home.html" data-cms-index="4">Tapijt</h3><p class="editable" data-cms-source="/_layouts/home.html" data-cms-index="5">U geeft uw interieur met een bekleding van tapijt een luxe, warme en tijdloze uitstraling. Ik beschik over een mooie collectie tapijtvloeren. Zo kunt u uit verschillende types, kleuren en merken kiezen.<br /><a href="producten/tapijt" class="btn more">Lees meer ></a></p></div>
+
+                <div class="visible-sm" style="clear: both; height: 1px;"></div>
+                
+                <div class="col-sm-4 col-md-3 col-xs-6"><a href="producten/vinyl-marmoleum" class="img"><img src="http://www.smitwoninginrichting.nl/img/vinyl-marmoleum.jpg" /></a><h3 class="editable" data-cms-source="/_layouts/home.html" data-cms-index="6">Vinyl / marmoleum</h3><p class="editable" data-cms-source="/_layouts/home.html" data-cms-index="7">Bent u op zoek naar een vinyl of marmoleum vloer die past in uw interieur? Ik beschik over een mooie collectie vinyl en marmoleum vloeren. Zo kunt u uit verschillende types, kleuren en merken kiezen.<br /><a class="btn more" target="_blank" href="producten/vinyl-marmoleum">Lees meer &gt;</a></p></div>
+                
+                <div class="visible-xs visible-md" style="clear: both; height: 1px;"></div>
+                
+                <div class="col-sm-4 col-md-3 col-xs-6"><a href="producten/pvc" class="img"><img src="http://www.smitwoninginrichting.nl/img/pvc.jpg" /></a><h3 class="editable" data-cms-source="/_layouts/home.html" data-cms-index="8">PVC</h3><p class="editable" data-cms-source="/_layouts/home.html" data-cms-index="9">Op zoek naar een mooie PVC vloer? Ik beschik over een mooie collectie PVC vloeren, welke vast gelegd kunnen worden. Ook voor het leggen van deze vloer bent u bij mij aan het juiste adres.<br /><a class="btn more" target="_blank" href="producten/pvc">Lees meer &gt;</a></p></div>
+                
+				<div class="col-sm-4 col-md-3 col-xs-6"><a href="diensten/trap-stofferen" class="img"><img src="http://www.smitwoninginrichting.nl/img/trap.jpg" /></a><h3 class="editable" data-cms-source="/_layouts/home.html" data-cms-index="10">Trap stofferen</h3><p class="editable" data-cms-source="/_layouts/home.html" data-cms-index="11">Bent u uw bestaande bekleding op de trap zat? U kunt uw trap door mij laten bekleden met o.a. tapijt, parket, vinyl of marmoleum. Voor alle soorten zijn vele kleuren en types mogelijk.<br /><a href="diensten/trap-stofferen" class="btn more">Lees meer ></a></p></div>
+
+                <div class="visible-xs visible-sm" style="clear: both; height: 1px;"></div>
+
+                <div class="col-sm-4 col-md-3 col-xs-6"><a href="producten/raamdecoraties" class="img"><img src="http://www.smitwoninginrichting.nl/img/raamdecoratie.jpg" /></a><h3 class="editable" data-cms-source="/_layouts/home.html" data-cms-index="12">Raamdecoratie</h3><p class="editable" data-cms-source="/_layouts/home.html" data-cms-index="13">U geeft uw interieur een complete uitstraling met een mooie raamdecoratie. U kunt uit verschillende types, kleuren en soorten kiezen. Kortom, alles is mogelijk!<br /><a href="producten/raamdecoraties" class="btn more">Lees meer ></a></p></div>
+                
+                <div class="col-sm-4 col-md-3 col-xs-6"><a href="producten/deurmatten" class="img"><img src="http://www.smitwoninginrichting.nl/img/deurmatten.jpg" /></a><h3 class="editable" data-cms-source="/_layouts/home.html" data-cms-index="14">Deurmatten</h3><p class="editable" data-cms-source="/_layouts/home.html" data-cms-index="15">Een goede deurmat borstelt het vuil onder uw schoenen vandaan en neemt het meeste van het vocht uit de schoenzolen. Verschillende kleuren, maten en types deurmatten zijn leverbaar.<br /><a href="producten/deurmatten" class="btn more">Lees meer ></a></p></div>
+                
+                
+            </div>     
+
+        </div>   
+    </div>
+    <div id="prefooter">
+        <div class="container">
+
+            
+            
+            <div class="row about">
+                <div class="col-sm-4 col-md-3 hidden-xs"><a href="over-mij" class="img"><img src="img/john-smit-woninginrichting-small.jpg" /></a></div>
+                <div class="col-sm-8 col-md-6"><h3>Over John Smit</h3><p>Smit Woninginrichting is een gevestigd bedrijf voornamelijk gericht op vloeren. Bij mij kunt u terecht voor een kleine opdracht maar ook voor grotere projecten.<br /><a href="over-mij" class="btn more">Lees meer ></a></p></div>
+            </div>
+
+            
+
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3"><h3>Contact</h3>
+                Smit Woninginrichting<br />
+                Schoonenburgsingel 40<br />
+                2135 GB Hoofddorp<br />
+                06 547 26 037<br />
+                <a href="/contact">stuur een e-mail</a></div>
+                <div class="col-sm-3"><h3>Menu</h3><div class="row"><div class="col-xs-5"><a href="/">Home</a><br /><a href="/diensten">Diensten</a><br /><a href="/producten">Producten</a><br /><a href="/fotos">Foto's</a><br /><a href="/showroom">Showroom</a></div><div class="col-xs-5"><a href="/privacy">Privacy</a><br /><a href="/disclaimer">Disclaimer</a><br /><a href="/contact">Contact</a></div></div></div>
+                <div class="col-sm-3"><h3>Offerte nodig?</h3><div class="row"><div class="col-xs-10">Geen probleem. Belt u mij voor een eerlijk advies en een gratis offerte.<br /><a class="btn" href="/contact">Offerte aanvragen</a></div></div></div>
+                <div class="col-sm-3"><h3>Blijf op de hoogte!</h3><div class="row"><div class="col-xs-10">Like mijn Facebook pagina en mis geen enkele aanbieding of nieuwtje.<br /><a class="btn" href="https://www.facebook.com/Smit-Woninginrichting-401072433421091/" target="_blank">Volg op Facebook</a></div></div></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<div id="lightbox" style="width:100%;height:100%;" onclick="closeimage();" ><div style="display:table-cell;vertical-align:middle;"><div id="controls"><span onclick="goPrev(event); return false;" id="prevbutton">‹</span><span onclick="goNext(event); return false;" id="nextbutton">›</span></div><span id="closebutton">sluiten</span><img id="image" src="" /></div></div>
+<script>
+
+//open external links in a new window
+function externalLinks() {
+  for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) {
+    var b = c[a];
+    b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank")
+  }
+}
+externalLinks();
+
+</script>
+</body>
+</html>
