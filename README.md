@@ -1,0 +1,1 @@
+# smitwoninginrichting_static
