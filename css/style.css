@@ -256,4 +256,4 @@ textarea {resize: vertical;}
 #content .block {border-left: 0; padding-left: 0px;}
 }
 
-.grecaptcha-badge {display: none !important;}
+.grecaptcha-badge {opacity:0!important;}
