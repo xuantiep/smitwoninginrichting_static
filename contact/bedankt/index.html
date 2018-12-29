@@ -99,7 +99,7 @@ window.addEventListener("resize", function() {
 </script>
   
 
-  <script src='https://www.google.com/recaptcha/api.js?render=6LcggIQUAAAAAJBaLV3F3ibuvDAxKjSkAIV3yqgI'></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 
   
 </head>
@@ -262,18 +262,6 @@ if(getParameterByName('url')) document.getElementById('wrapall').style.display='
 </div>
 
 <div id="lightbox" style="width:100%;height:100%;" onclick="closeimage();" ><div style="display:table-cell;vertical-align:middle;"><div id="controls"><span onclick="goPrev(event); return false;" id="prevbutton">‹</span><span onclick="goNext(event); return false;" id="nextbutton">›</span></div><span id="closebutton">sluiten</span><img id="image" src="" /></div></div>
-
-
-<script>
-grecaptcha.ready(function() {
-grecaptcha.execute('6LcggIQUAAAAAJBaLV3F3ibuvDAxKjSkAIV3yqgI', {action: 'action_name'})
-.then(function(token) {
-// Verify the token on the server.
-});
-});
-</script>
-
-
 <script>
 
 //open external links in a new window
