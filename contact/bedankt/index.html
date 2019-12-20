@@ -28,7 +28,7 @@ function setimage() {
     document.getElementById('image').src = '//images.weserv.nl/?url=www.smitwoninginrichting.nl'+url+'&w=1000&h=1000';
 }
 function closeimage() {
-    document.location.href = '/contact/bedankt/index.html';
+    document.location.href = '/contact/bedankt/';
 }
 
 function goNext(e) {
@@ -208,7 +208,29 @@ if(getParameterByName('url')) document.getElementById('wrapall').style.display='
 </div><div class="formwrapper"><h1>Contact</h1><div data-cms-content-wrapper="/_layouts/contact.html"><p>Dank u voor het invullen van het formulier. Wij zullen zo spoedig mogelijk contact met u opnemen.</p>
 </div>
 
-        </div>
+          
+
+        <form id="contact_form" action="https://api.formbucket.com/f/buk_KPZQ7mgNUhAC8SMxxZQ6IbnX" method="POST">
+        <input type="text" name="_gotcha" style="display: none;">
+            <div class="row">
+                <div class="col-lg-4">
+                <div class="form-group">Naam*<br><input type="text" class="form-control" required="required" name="name"></div>
+                </div>
+                <div class="col-lg-4">
+                <div class="form-group">E-mailadres*<br><input type="email" class="form-control" required="required" name="email"></div>
+                </div>
+                <div class="col-lg-4">
+                <div class="form-group">Telefoonnummer*<br><input type="number" class="form-control" required="required" name="phone"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                <div class="form-group">Bericht*<br><textarea name="message" class="form-control" required="required" style="height: 100px;"></textarea></div>
+                </div>
+            </div>
+            <div class="g-recaptcha" data-sitekey="6LeEnIUUAAAAABeUHJH8qBhwm3l8fwdrFULlQHGE"></div>
+            <input type="submit" class="btn" value="Verstuur" style="margin-top: 15px;" />
+        </form><br /><br /></div>
 
     </div>
     <div class="col-lg-1"></div>
@@ -217,7 +239,7 @@ if(getParameterByName('url')) document.getElementById('wrapall').style.display='
 	        <div class="block">
 		        Smit Woninginrichting<br />Schoonenburgsingel 40<br />2135 GB Hoofddorp<br />
 		        0654726037<br /><a href="mailto:info@smitwoninginrichting.nl">info@smitwoninginrichting.nl</a><br /><br /><br />
-		        <strong>KvK nummer</strong><br /> 34256522<br /><br /><strong>BTW nummer</strong><br />NL1314.34.482.B01<br /><br /><strong>IBAN</strong><br />NL52ABNA0421978821<br /><br /><strong>BIC</strong><br />ABNANL2A
+		        <strong>KvK nummer</strong><br /> 34256522<br /><br /><strong>BTW nummer</strong><br />NL001606730B69<br /><br /><strong>IBAN</strong><br />NL52ABNA0421978821<br /><br /><strong>BIC</strong><br />ABNANL2A
 	        </div>
     </div>
 </div>
